@@ -10,7 +10,7 @@
     "commands": [
       {
         "match": "\\.py$",
-        "cmd": "pycln ${file} --config pyproject.toml"
+        "cmd": "autoflake ${file} --config setup.cfg"
       }
     ]
   },
@@ -45,7 +45,8 @@
     "editor.formatOnSave": true,
     "editor.autoIndent": "full",
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": true,
+      "source.unusedImports": true
     }
   }
 }

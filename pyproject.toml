@@ -1,7 +1,3 @@
-[tool.pycln]
-all = true
-exclude = '.*__init__\.pyi?$'
-
 [tool.isort]
 profile = "black"
 line_length = 79
