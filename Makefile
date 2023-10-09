@@ -34,12 +34,12 @@ m-migrate:
 	python manage.py migrate $(app)
 
 f-check:
-	autoflake . --check --config setup.cfg
+	autoflake . --check --config pyproject.toml
 	isort . --check --settings-path pyproject.toml
 	black . --check --config pyproject.toml
 
 f-format:
-	autoflake . --config setup.cfg
+	autoflake . --config pyproject.toml
 	isort . --settings-path pyproject.toml
 	black . --config pyproject.toml
 

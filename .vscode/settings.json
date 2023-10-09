@@ -10,7 +10,7 @@
     "commands": [
       {
         "match": "\\.py$",
-        "cmd": "autoflake ${file} --config setup.cfg"
+        "cmd": "autoflake ${file} --config pyproject.toml"
       }
     ]
   },
