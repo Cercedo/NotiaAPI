@@ -16,11 +16,10 @@ import environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-BASE_DIR_NAME = BASE_DIR.name
 
 
 # Environment settings
-ENV_PATH = BASE_DIR.joinpath(BASE_DIR_NAME, ".env")
+ENV_PATH = BASE_DIR.joinpath(".env")
 
 env = environ.Env()
 environ.Env.read_env(ENV_PATH)

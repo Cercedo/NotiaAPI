@@ -57,3 +57,9 @@ db-setup:
 
 annotations-execute:
 	echo python manage.py shell -c "from annotations.db.metaclinic.modifications import $(id); $(id)()"
+
+docker-up:
+	docker compose up --build -d --wait
+
+docker-down:
+	docker compose down
