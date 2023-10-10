@@ -27,7 +27,7 @@
 
   "isort.args": ["--settings-path", "pyproject.toml"],
 
-  "python.analysis.typeCheckingMode": "strict",
+  "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
   "python.terminal.activateEnvInCurrentTerminal": true,
 
