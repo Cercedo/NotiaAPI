@@ -50,13 +50,13 @@ prready: f-check unit
 
 folder-setup:
 	mkdir upload logs
-	> logs/metaclinic.log
+	> logs/notia.log
 
 db-setup:
-	echo python manage.py shell -c "from annotations.db.metaclinic import main; main()" > logs/metaclinic.log
+	python manage.py shell -c "from annotations.db.notia import main; main();" > logs/notia.log
 
 annotations-execute:
-	echo python manage.py shell -c "from annotations.db.metaclinic.modifications import $(id); $(id)()"
+	echo python manage.py shell -c "from annotations.db.notia.modifications import $(id); $(id)()"
 
 docker-up:
 	docker compose up --build -d --wait

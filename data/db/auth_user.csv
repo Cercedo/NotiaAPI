@@ -1,0 +1,2 @@
+username,email,first_name,last_name,is_superuser
+admin,admin@notia.pe,admin,admin,1
